@@ -1,0 +1,16 @@
+version: '3'
+services:
+  service1:
+    build: ./service1
+    volumes:
+      - ./shared:/app/shared
+
+  service2:
+    build: ./service2
+    volumes:
+      - ./shared:/app/shared
+
+  service3:
+    build: ./service3
+    volumes:
+      - ./shared:/app/shared
